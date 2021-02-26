@@ -1,197 +1,141 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-	 <!--<link rel="stylesheet" href="outline.css">-->
-    <title>Let’s Speak, языковая школа</title>
-  </head>
-  <body class="page container">
-    <!--Блок меню слева-->
-    <nav class="page-menu">
-      <a class="logo" href="#">
-        <img class="logo-img" src="img/logot.svg" width="161" height="36" alt="Let’s Speak, языковая школа">
-      </a>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootst.." integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstr.." integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="outlinse.css">
+<title>Часы</title>
+</head>
+<body>
 
-      <ul class="page-menu-list">
-        <li class="page-menu-item page-menu-item-active">
-          <a class="page-menu-link page-menu-link-cab">Кабинет ученика</a>
-        </li>
-        <li class="page-menu-item">
-          <a class="page-menu-link page-menu-link-class" href="#">Учебный класс</a>
-        </li>
-        <li class="page-menu-item">
-          <a class="page-menu-link page-menu-link-book" href="#">Методичка</a>
-        </li>
-        <li class="page-menu-item">
-          <a class="page-menu-link page-menu-link-home" href="#">Домашняя работа</a>
-        </li>
-        <li class="page-menu-item">
-          <a class="page-menu-link page-menu-link-exam" href="#">Экзамены</a>
-        </li>
-      </ul>
-      <ul class="page-menu-tools">
-      	<li class="page-menu-tools-item">
-          <a class="page-menu-tools-link" href="#">Настройки</a>
-        </li>
-      </ul>
-    </nav>
-     <!--Панель сверху-->
-    <header class="page-header">
-      <!--Поисковая строка-->
-     <div class="search">
-        <form method="GET" action="#">
-          <img src="img/loop.svg">
-          <input class="search-field" type="text" name="search" id="search" placeholder="Поиск...">
-        </form>
-      </div>
-      <!--Текущий пользователь-->
-      <div class="profile item-with-picture" data-text="О">
-        <a class="profile-name" href="#">Опознанный Енот</a>
-        <button class="profile-btn" type="button"><span class="visually-hidden">Открыть/Закрыть меню</span></button>
-      </div>
-      <!--Уведомления-->
-      <div class="notifications">
+<div class="container header">
+<div class="row">
+<div class="col-3 header-left">Left</div>
+<div class="col-6 header-mid">
+<ul>
+<li>Каталог</li>
+<li>Каталог</li>
+<li>Каталог</li>
+<li>Каталог</li>
+</ul>
+</div>
+<div class="col-3 header-mid">Right</div>
+</div>
+</div>
 
-        <img class="notifications-btn" src="img/not.svg">
-      </div>
-    </header>
-    <!--Блок основного контента-->
-    <main class="page-main">
-      <h1 class="visually-hidden">Главная страница сайта языковой школы Let’s Speak</h1>
-      <!--Фотография с ссылкой на тест-->
-      <div class="slider">
-         <img class="slider-img" src="img/banner.jpg" width="820" height="300" alt="Бигбен на фоне голубого облачного неба">
-          <p class="slider-headline">«Бифитер», «Кокни», «Даблдекер»...</p>
-        <p class="slider-text">Пройдите тест и узнайте насколько хорошо вы знакомы с жизнью в Лондоне</p>
-         <a href="#">Пройти тест ➞</a>
-         <button class="slider-btn slider-btn-prev" type="button"><span class="visually-hidden">Назад</span></button>
-        <button class="slider-btn slider-btn-next" type="button"><span class="visually-hidden">Вперёд</span></button>
-      </div>
-      <!--Предложения от компании-->
-      <section class="offers">
-        <h2 class="visually-hidden">Интересные предложения</h2>
-        <ul class="offers-list">
-          <li class="offers-item">
-            <h3>Английский завтрак</h3>
-            <div class="offer-content">
-              <p class="offers-item-text">Разговорный клуб</p>
-              <p class="offers-item-time">10:00 — 11:00 (ПН—ПТ)</p>
-            </div>
-            <div class="offer-footer">
-              <a href="#">Записаться ➞</a>
-            </div>
-          </li>
-          <li class="offers-item">
-            <h3>Лето в Лондоне</h3>
-            <div class="offer-content">
-              <p class="offers-item-text">Месяц экскурсий и практики</p>
-              <p class="offers-item-time">10 июня — 3 июля</p>
-            </div>
-            <div class="offer-footer">
-              <a href="#">Отправиться ➞</a>
-            </div>
-          </li>
-          <li class="offers-item">
-            <h3>Надоел английский?</h3>
-            <div class="offer-content">
-              <p class="offers-item-text">С нами можно выучить и другие языки</p>
-            </div>
-            <div class="offer-footer">
-              <a href="#">Открыть список ➞</a>
-            </div>
-          </li>
-        </ul>
-      </section>
-      <!--Видео-->
-      <section class="video">
-        <!--Видео-урок-->
-        <h2 class="visually-hidden">Просмотр видео уроков</h2>
-        <video class="lesson-video" poster="img/lesson9.jpg" width="540" height="300">
-          <source src="video.mp4" type="video/mp4">
-        </video>
-        <!--Навигация по Видео-урокам-->
-        <div class="video-play-list-wrapper">
-          <h3>Курс English A1</h3>
-          <ul class="play-list">
-            <li class="play-item">
-              <button class="play-button" type="button"><span class="visually-hidden">Пуск/Стоп</span></button>
-              <h4>Урок 8</h4>
-              <p>Времена глаголов</p>
-            </li>
-            <li class="play-item play-item-active">
-              <button class="play-button" type="button"><span class="visually-hidden">Пуск/Стоп</span></button>
-              <h4>Урок 9</h4>
-              <p>Неправильные глаголы</p>
-            </li>
-            <li class="play-item">
-              <button class="play-button" type="button"><span class="visually-hidden">Пуск/Стоп</span></button>
-              <h4>Урок 10</h4>
-              <p>Present Simple</p>
-            </li>
-            <li class="play-item">
-              <button class="play-button" type="button"><span class="visually-hidden">Пуск/Стоп</span></button>
-              <h4>Урок 11</h4>
-              <p>Past Simple</p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!--Панель пользователей-->
-      <section class="contacts">
-        <h2>Контакты</h2>
-        <ul class="contact-list">
-          <li class="contact-item">
-            <a class="contact-link item-with-picture" data-text="Н" href="#">
-              <p class="contact-name">Неопознанный Енот</p>
-              <p class="contact-lang">English A1</p>
-            </a>
-          </li>
-          <li class="contact-item">
-            <a class="contact-link item-with-picture" data-text="Н" href="#">
-              <p class="contact-name">Неопознанный Енот 2</p>
-              <p class="contact-lang">Español 2</p>
-            </a>
-          </li>
-          <li class="contact-item">
-            <a class="contact-link item-with-picture" data-text="Н" href="#">
-              <p class="contact-name">Неопознанный Енот 3</p>
-              <p class="contact-lang">日本語</p>
-            </a>
-          </li>
-          <li class="contact-item">
-            <a class="contact-link item-with-picture" data-text="Н" href="#">
-              <p class="contact-name">Неопознанный Енот 4</p>
-              <p class="contact-lang">English B2</p>
-            </a>
-          </li>
-          <li class="contact-item">
-            <a class="contact-link item-with-picture" data-text="Н" href="#">
-              <p class="contact-name">Неопознанный Енот 5</p>
-              <p class="contact-lang">Le Français</p>
-            </a>
-          </li>
-          <li class="contact-item">
-            <a class="contact-link item-with-picture" data-text="Н" href="#">
-              <p class="contact-name">Неопознанный Енот 6</p>
-              <p class="contact-lang">Español 1</p>
-            </a>
-          </li>
-          <li class="contact-item">
-            <a class="contact-link item-with-picture" data-text="Н" href="#">
-              <p class="contact-name">Неопознанный Енот 7</p>
-              <p class="contact-lang">Italiano</p>
-            </a>
-          </li>
-        </ul>
-      </section>
-    </main>
-    <footer class="page-footer">
-      <p class="copyright">© 2020 </p>
-      <a class="page-footer-logo" href="#">Let’s Speak, языковая школа</a>
-      <p class="copyright-details">Сайт создан в HTML Academy</p>
-    </footer>
-  </body>
-</html>
+<div class="container body-1">
+<div class="row">
+<div class="col-4 col-left">
+<h1>Весна Лето 2019</h1>
+<h2> Коллекция</h2>
+<p>Швейцарские часы в наличии в Москве и с доставкой по всему миру</p>
+<button>Смотреть каталог</button>
+</div>
+<div class="col-2 body-1-price">22000 Р —--</div>
+<div class="col-4"><img src="watch_main.png"></div>
+<div class="col-2 body-1-mm">--— 28 мм диаметр </div>
+</div>
+
+<div class="container body-2">
+<div class="row">
+<div class="col"></div>
+<div class="col"><h2>Популярные модели</h2></div>
+<div class="col-auto all">Смотреть все</div>
+</div>
+<div class="row">
+<div class="col-12 col-md-4">
+<h4>Rado</h4>
+<p>65300 </p>
+<img src="watch_1.png">
+<div class="col">Подробнее</div>
+
+</div>
+
+<div class="col-12 col-md-4">
+<h4>Bvlgari</h4>
+<p>81700 </p>
+<img src="watch_3.png">
+<div class="col">Подробнее</div>
+
+</div>
+
+<div class="col-12 col-md-4">
+<h4>Bvlgari</h4>
+<p>72700 </p>
+<img src="watch_4.png">
+<div class="col-auto">Подробнее</div>
+
+</div>
+
+</div>
+<div class="container body-3">
+<div class="row">
+<div class="col">
+<h2 >Подлинное качество</h2>
+<p>Все часы производятся в Швейцарии и имеют сертификаты качества. Настоящие швейцарские часы - это предмет гордости и престижа.
+<button>Смотреть каталог</button>
+</div>
+</div>
+<div class="container body-4">
+<div class="row">
+<div class="col-4">
+<h2>Следите за нашими новостями</h2>
+<p>Подписывайтесь на @conquest_watch в соцсетях и узанавайте о новинках и акциях первыми.
+<p>Логотипы
+</div>
+<div class="col-2">
+<img class="photo1" src="photo_1.png">
+<img class="photo2" src="photo_2.png">
+</div>
+<div class="col-4">
+<img class="photo3" src="photo_3.png">
+</div>
+</div>
+</div>
+
+<div class="container footer">
+<div class="row">
+<div class="col"
+<ul>
+<li>Conquest</li>
+<li>8 (499) 450-47-97</li>
+<li>info@conquest.watch.ru</li>
+</ul>
+</div>
+<div class="col">
+<ul>
+<li>О компании</li>
+<li>Наши магазины</li>
+<li>Вакансии</li>
+<li>Сертификаты</li>
+<li>Отзывы</li>
+</ul>
+</div>
+<div class="col">
+<ul>
+<li>Покупателям</li>
+<li>Каталог товаров</li>
+<li>Как заказать?</li>
+<li>FAQ</li>
+<li>Корпоративным клиентам</li>
+</ul>
+</div>
+<div class="col">
+<ul>
+<li>Оплата и доставка</li>
+<li>Способы оплаты</li>
+<li>Время доставки</li>
+<li>Гарантии и ремонт</li>
+<li>Возврат и компенсация</li>
+</ul>
+</div>
+</div>
+
+</div>
+
+
+
+</body>
